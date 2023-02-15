@@ -1,3 +1,5 @@
+CREATE OR REPLACE VIEW departments_wmore_employees_2021 
+AS
 SELECT departments.iddepartments, 
      departments.departments_name, 
         COUNT(CONCAT(hired_employees.idhired_employees,"-",hired_employees.employee_name)) AS number_of_employees_hired

@@ -14,5 +14,5 @@ COPY . /app
 
 RUN pip --no-cache-dir install -r requirements.txt
 
-CMD ["python3","Process_Globant/Challenge1_R2.ipynb","Process_Globant/Challenge2_R1.ipynb"]
+CMD ["python3","Process_Globant/Challenge1_R2.py","Process_Globant/Challenge2_R1.py"]
 

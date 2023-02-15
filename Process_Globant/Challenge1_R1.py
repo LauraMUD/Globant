@@ -13,20 +13,20 @@ conn = connection.connect()
 path_dept= './departments.csv'
 df_dept = pd.read_csv(path_dept, delimiter=',', header=None)
 df_dept.columns =['iddepartments', 'departments_name']
-df_dept['departments_name'] = df_dept['departments_name'].astype(pd.StringDtype())
+df_dept['departments_name'] = df_dept['departments_name'].astype(str)
 
 
 # Jobs data
 path_job= './jobs.csv'
 df_job = pd.read_csv(path_job, delimiter=',', header=None)
 df_job.columns =['idjobs', 'job_name']
-df_job['job_name'] = df_job['job_name'].astype(pd.StringDtype())
+df_job['job_name'] = df_job['job_name'].astype(str)
 
 # Hired Employees data
 path_he= './hired_employees.csv'
 df_he = pd.read_csv(path_he, delimiter=',', header=None)
 df_he.columns =['idhired_employees', 'employee_name','hired_date','departments_code','job_code']
-df_he['employee_name'] = df_he['employee_name'].astype(pd.StringDtype())
+df_he['employee_name'] = df_he['employee_name'].astype(str)
 df_he['hired_date'] = pd.to_datetime(df_he['hired_date'])
 
 

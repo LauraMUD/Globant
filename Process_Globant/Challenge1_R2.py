@@ -96,21 +96,22 @@ def drop_table_departments():
 
     drop_table(table_list[0])
     conn.close()
-    return "Table departments dropped successfully", 201
+    return jsonify({"response": "Table departments dropped successfully"})
 
 @app.route("/drop_table_jobs")
 def drop_table_jobs():
 
     drop_table(table_list[1])
     conn.close()
-    return "Table jobs dropped successfully", 201
+    return jsonify({"response": "Table jobs dropped successfully"})
 
 @app.route("/drop_table_hiredemployees")
 def drop_table_hiredemployees():
 
     drop_table(table_list[2])
     conn.close()
-    return "Table hiredemployees dropped successfully", 201
+    return jsonify({"response": "Table hired employees dropped successfully"})
+
 
 @app.route("/write_data_departments")
 def write_data_departments():
@@ -152,4 +153,4 @@ if __name__=="__main__" :
     #For Docker
     #app.run(host="0.0.0.0",port=4000)
     # Only in my local host
-    app.run(debug=False)
+    app.run(host="0.0.0.0",port=4000,debug=False)

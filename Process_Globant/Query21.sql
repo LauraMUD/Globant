@@ -1,3 +1,5 @@
+CREATE OR REPLACE VIEW employee_for_each_job_Q2021 
+AS
 SELECT departments.departments_name, 
        jobs.job_name, 
        CONCAT(hired_employees.idhired_employees,"-",hired_employees.employee_name) AS employees,
