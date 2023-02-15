@@ -7,8 +7,8 @@ The procedure is a dockerization of the REST APIs proposed by the challenge as w
 
 - In the folder called *"Process Globant"* are the files and the procedures of the challenges:
   + Challenge 1 files:
-    -Challenge1_R1.py and Challenge1_R1.ipynb Procedures point 1
-    -Challenge1_R2.py and Challenge1_R2.ipynb Procedures point 2
+    - Challenge1_R1.py and Challenge1_R1.ipynb Procedures point 1
+    - Challenge1_R2.py and Challenge1_R2.ipynb Procedures point 2
   + Challenge 2 files:
     - Challenge2_R1.py and Challenge2_R1.ipynb Procedures part1
     - Departments_Metrics.pbix Report in Power BI for procedure part1
